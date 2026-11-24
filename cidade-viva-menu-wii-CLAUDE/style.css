@@ -1,0 +1,170 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color: #14425f;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #5cc8ff 0%, #bfeaff 35%, #e8fff0 70%, #8fe08f 100%);
+  background-attachment: fixed;
+}
+
+/* ---------- Cabeçalho ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(210,240,255,.85));
+  border-bottom: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(0, 110, 170, .35);
+  position: relative;
+}
+.logo { font-size: 26px; font-weight: bold; color: #1a8ed8; text-shadow: 1px 1px 0 #fff, 0 2px 6px rgba(0,120,200,.3); }
+.logo span { color: #2fb34a; }
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+nav a {
+  text-decoration: none;
+  color: #14658f;
+  font-weight: bold;
+  padding: 8px 16px;
+  background: linear-gradient(180deg, #fff, #d9f1ff);
+  border: 2px solid #9fd8f5;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0,100,160,.25);
+}
+nav a:hover { background: linear-gradient(180deg, #e9fff0, #9be8ab); border-color: #3fbf5c; color: #0d6a2a; }
+
+main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+section { margin: 40px 0; }
+h2 { text-align: center; font-size: 30px; color: #fff; margin-bottom: 22px; text-shadow: 0 2px 4px rgba(0,90,150,.6), 0 0 12px rgba(0,150,220,.6); }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(210,240,255,.6));
+  border: 3px solid #fff;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 100, 170, .4), inset 0 0 25px #fff;
+}
+.hero-texto { flex: 1; min-width: 260px; position: relative; }
+.hero h1 { font-size: 38px; line-height: 1.2; color: #1a8ed8; text-shadow: 2px 2px 0 #fff, 0 4px 8px rgba(0,120,200,.3); margin-bottom: 14px; }
+.hero p { font-size: 18px; margin-bottom: 20px; }
+.hero-img { flex: 1; min-width: 260px; }
+.hero-img img { width: 100%; border: 4px solid #fff; border-radius: 30px; box-shadow: 0 8px 20px rgba(0,90,150,.4); display: block; }
+
+.bolha { position: absolute; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #fff, rgba(120,210,255,.4)); border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,120,200,.3); }
+.b1 { width: 70px; height: 70px; top: -25px; left: 30px; }
+.b2 { width: 45px; height: 45px; bottom: -15px; right: 60px; }
+
+.botao {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 30px;
+  background: linear-gradient(180deg, #7ee88f, #1fa83c);
+  border: 2px solid #fff;
+  border-radius: 40px;
+  text-shadow: 0 1px 3px rgba(0,80,20,.7);
+  box-shadow: 0 5px 12px rgba(0,110,40,.45), inset 0 8px 8px rgba(255,255,255,.4);
+}
+.botao:hover { background: linear-gradient(180deg, #5cc8ff, #1a8ed8); box-shadow: 0 5px 14px rgba(0,100,200,.55), inset 0 8px 8px rgba(255,255,255,.4); }
+
+/* ---------- Canais estilo Wii ---------- */
+.canais { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.card {
+  width: 220px;
+  text-align: center;
+  padding: 22px 16px;
+  background: linear-gradient(180deg, #fff, #eaf7ff);
+  border: 3px solid #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 16px rgba(0, 100, 160, .35);
+}
+.card:hover { background: linear-gradient(180deg, #fff, #d4ffdd); border-color: #3fbf5c; box-shadow: 0 0 0 4px #7ee88f, 0 8px 20px rgba(0,120,60,.4); }
+.icone { font-size: 42px; margin-bottom: 6px; }
+.card h3 { color: #1a8ed8; margin-bottom: 6px; }
+
+/* ---------- Painéis de vidro ---------- */
+.painel {
+  background: rgba(255,255,255,.8);
+  border: 3px solid #fff;
+  border-radius: 28px;
+  padding: 24px 30px;
+  box-shadow: 0 8px 22px rgba(0,100,160,.35), inset 0 0 18px #fff;
+}
+.painel h3 { margin-bottom: 10px; color: #1a8ed8; }
+ul { list-style: none; }
+li { padding: 10px 14px; margin: 8px 0; background: linear-gradient(90deg, #e7f8ff, #f4fff6); border-left: 6px solid #3fbf5c; border-radius: 12px; }
+li:hover { background: linear-gradient(90deg, #cdefff, #d9ffe0); }
+
+/* ---------- Tabela ---------- */
+.legenda { text-align: center; color: #0e5a80; margin-bottom: 12px; font-style: italic; }
+table { width: 100%; border-collapse: separate; border-spacing: 0; background: #fff; border: 3px solid #fff; border-radius: 22px; overflow: hidden; box-shadow: 0 8px 22px rgba(0,100,160,.35); }
+th { background: linear-gradient(180deg, #5cc8ff, #1a8ed8); color: #fff; padding: 14px; text-shadow: 0 1px 3px rgba(0,60,120,.6); }
+td { padding: 12px 14px; text-align: center; border-top: 1px solid #cfeaf9; }
+tbody tr:nth-child(even) { background: #eef9ff; }
+tbody tr:hover { background: #d4ffdd; }
+
+/* ---------- Galeria ---------- */
+.galeria { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+figure { width: 290px; background: #fff; border: 3px solid #fff; border-radius: 22px; overflow: hidden; box-shadow: 0 6px 16px rgba(0,100,160,.35); }
+figure:hover { box-shadow: 0 0 0 4px #5cc8ff, 0 8px 20px rgba(0,100,200,.45); }
+figure img { width: 100%; display: block; }
+figcaption { text-align: center; font-weight: bold; padding: 10px; color: #14658f; }
+
+/* ---------- Mídia ---------- */
+.midias { display: flex; flex-wrap: wrap; gap: 20px; }
+.midias .painel { flex: 1; min-width: 280px; }
+audio { width: 100%; margin-top: 8px; }
+video { border-radius: 16px; background: #000; }
+
+/* ---------- Rodapé estilo barra do Wii ---------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #fff, #dff3ff);
+  border-top: 4px solid #fff;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 -6px 20px rgba(0,100,160,.35);
+}
+.rodape-centro { flex: 1; text-align: center; font-size: 14px; min-width: 240px; }
+.rodape-centro a { color: #1a8ed8; font-weight: bold; }
+.rodape-centro a:hover { color: #2fb34a; }
+.bola {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #14658f;
+  background: radial-gradient(circle at 35% 25%, #fff, #bfe6fb);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 12px rgba(0,100,160,.4);
+}
+.bola:hover { background: radial-gradient(circle at 35% 25%, #fff, #9be8ab); box-shadow: 0 0 0 4px #7ee88f, 0 5px 12px rgba(0,120,60,.4); }
+
+@media (max-width: 600px) {
+  .hero { padding: 25px; }
+  .hero h1 { font-size: 28px; }
+  header { justify-content: center; }
+}
